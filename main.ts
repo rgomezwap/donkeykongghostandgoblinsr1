@@ -18,6 +18,6 @@ let mySprite = sprites.create(img`
     . e e b b 4 4 4 4 4 4 4 4 e e . 
     . . . c c c c c e e e e e . . . 
     `, SpriteKind.Player)
-controller.moveSprite(mySprite, 50, 50)
+mySprite.setVelocity(50, 80)
 scene.cameraFollowSprite(mySprite)
 mySprite.setBounceOnWall(true)
